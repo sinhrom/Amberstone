@@ -98,9 +98,7 @@ body {
 
     .section__img-frameRight {
         position: absolute;
-        width: 415px;
-        height: 415px;
-        left: 1604px;
+        left: 1710px;
         top: 1636px;
     }
 
@@ -117,6 +115,7 @@ body {
         position: relative;
         bottom: 200px;
         left: 16px;
+        width: 98%;
 
         .section__product-img {
             width: 21%;
@@ -132,6 +131,51 @@ body {
     }
 
 }
+
+.section__contact {
+    background: linear-gradient(95.92deg, #02EE55 39.19%, #38AFF1 104.14%);
+    max-height: 466px;
+    display: flex;
+
+    .section__contact-para {
+        padding: 94px 153px;
+
+        h1 {
+            font-size: 72px;
+            padding-bottom: 28px;
+        }
+
+        h3 {
+            width: 192px;
+            text-align: center;
+            height: 70px;
+            border: 1px solid #0B0A16;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            padding: 17px 0;
+        }
+    }
+
+    .section__contact-announce {
+        width: 100%;
+
+        .section__contact-loud {
+            position: absolute;
+            width: 556.28px;
+            height: 556.28px;
+            left: 1317.12px;
+            top: 1934px;
+        }
+
+        .section__contact-hand {
+            position: absolute;
+            height: 554px;
+            left: 1522px;
+            top: 2029px;
+        }
+    }
+}
+
 
 ul,
 li {
