@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMBERSTONE</title>
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -21,15 +22,17 @@
                     <li class="header__navbar-items"><a href="#">Works</a></li>
                     <li class="header__navbar-items"><a href="#">Carrers</a></li>
                     <li class="header__navbar-items"><a href="#">Contact</a></li>
-                    <li class="header__navbar-items"><a href="#">Region</a></li>
                 </ul>
+                <select name="regions" id="regions">
+                    <option value=""><a href="#">VN</a></option>
+                    <option value=""><a href="#">ENG</a></option>
+                </select>
             </div>
         </div>
 
-        <img id="header__heading-work" src="image/WorkBG 2.svg" alt="">
-        <img id="header__heading-gr" src="image/Group.svg" alt="">
+        <img class="header__heading-work" src="image/WorkBG 2.svg" alt="">
         <h1>To Bring the world to VietNam <br>to bring viet nam to the world</h1>
-        <img id="header__heading-phg" src="image/PHG.svg" alt="">
+        <img class="header__heading-phg" src="image/PHG.svg" alt="">
 
     </div>
 
@@ -96,8 +99,9 @@
     </div>
     <div class="section__footer">
         <div class="section__footer-left">
-            <img src="image/contact.svg" alt="">
-            <h2>Bring the world to Vietnam & Vietnam to the world</h2>
+            <h2>Bring the world to <br />Vietnam<br /> & Vietnam to the world</h2>
+            <img class="section__footer-contact" src="image/contact.svg" alt="">
+
         </div>
         <div class="section__footer-right">
             <a href="#" class="fa fa-facebook"></a>
@@ -110,7 +114,7 @@
                 (84-28) 71087778</p>
         </div>
 
-    </div>
+    </div> 
 </body>
 
 </html>
