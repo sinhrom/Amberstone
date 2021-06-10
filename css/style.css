@@ -177,6 +177,14 @@ body {
   top: 2029px;
 }
 
+.section__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
 ul,
 li {
   list-style-type: none;
