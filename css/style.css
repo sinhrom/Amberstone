@@ -133,11 +133,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: calc(103% - 15px - 320px);
   margin: 60px 145px;
 }
 
 .section__info .section__product-img {
+  width: 22%;
   position: relative;
   padding: 10px;
 }
