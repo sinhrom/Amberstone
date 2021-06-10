@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-*,
-html,
-body {
-  margin: 0;
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: 'Oswald';
-  width: 1920px;
-}
-
-.header {
-  height: 820px;
+  margin: 0;
+  padding: 0;
 }
 
 .header .header__logo {
@@ -50,8 +45,8 @@ body {
 
 .header #header__heading-phg {
   position: absolute;
-  top: 261px;
-  right: 378px;
+  top: 30%;
+  right: 16%;
 }
 
 .header #header__heading-gr {
@@ -63,8 +58,8 @@ body {
 .header h1 {
   text-transform: uppercase;
   position: absolute;
-  top: 464px;
-  left: 430px;
+  top: 43%;
+  left: 22%;
   color: white;
   font-size: 65px;
   letter-spacing: 0.2em;
@@ -73,7 +68,8 @@ body {
 .section__info {
   background-color: #0B0A16;
   padding: 57px 0 0;
-  max-height: 1230px;
+  margin: -5px 0;
+  position: relative;
 }
 
 .section__info .section__info-list {
@@ -83,7 +79,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 480px;
+  padding: 0 25%;
 }
 
 .section__info .section__info-list a {
@@ -100,34 +96,36 @@ body {
 
 .section__info .section__img-frameRight {
   position: absolute;
-  left: 1710px;
-  top: 1636px;
+  right: 0;
+  bottom: 114px;
 }
 
 .section__info hr {
-  width: 960px;
-  left: 480px;
   position: absolute;
+  left: 25%;
+  right: 25%;
 }
 
 .section__info .section__row {
   position: relative;
-  top: -200px;
-  left: 150px;
-  right: 0;
-  bottom: 0;
+  padding: 0px 9%;
+  top: -188px;
 }
 
-.section__info .section__row .section__product {
+.section__info .section__row .row .section__product {
   position: relative;
 }
 
-.section__info .section__row .section__product .section__img-frame {
+.section__info .section__row .row .section__product .section__img-ec3 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.section__info .section__row .row .section__product .section__img-frame {
   position: absolute;
-  top: 5%;
-  right: 0%;
-  bottom: 0;
-  left: 59%;
+  width: 18%;
+  right: 47px;
+  top: 23px;
 }
 
 .section__contact {
@@ -136,15 +134,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .section__contact .section__contact-para {
-  padding: 94px 153px;
+  padding: 94px 106px;
 }
 
 .section__contact .section__contact-para h1 {
   font-size: 72px;
-  padding-bottom: 28px;
+  margin: 0;
 }
 
 .section__contact .section__contact-para h3 {
@@ -159,30 +159,61 @@ body {
 }
 
 .section__contact .section__contact-announce {
-  width: 100%;
+  width: 50%;
 }
 
 .section__contact .section__contact-announce .section__contact-loud {
   position: absolute;
-  width: 556.28px;
-  height: 556.28px;
-  left: 1317.12px;
-  top: 1934px;
+  top: -36%;
+  right: -1px;
 }
 
 .section__contact .section__contact-announce .section__contact-hand {
   position: absolute;
-  height: 554px;
-  left: 1522px;
-  top: 2029px;
+  right: -60px;
+  top: -11%;
 }
 
 .section__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   background-color: black;
   color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__footer .section__footer-left {
+  position: relative;
+  padding: 65px 160px;
+}
+
+.section__footer .section__footer-left h2 {
+  position: absolute;
+  top: 28px;
+  left: 27%;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: 8px;
+}
+
+.section__footer .section__footer-right {
+  text-align: end;
+  padding-right: 160px;
+}
+
+.section__footer .section__footer-right a {
+  color: white;
+  padding: 0px 9px;
+  text-decoration: none;
 }
 
 ul,

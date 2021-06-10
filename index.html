@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .grid {
-        width: 85%;
-        }
-    </style>
+
 </head>
 
 <body>
+    
     <div class="header">
-        <div class="header__logo">
+        <div class="header__logo ">
             <a href="#"><img src="image/Black.svg" alt="Logo"></a>
 
             <div class="header__navbar">
@@ -27,23 +24,27 @@
                     <li class="header__navbar-items"><a href="#">Works</a></li>
                     <li class="header__navbar-items"><a href="#">Carrers</a></li>
                     <li class="header__navbar-items"><a href="#">Contact</a></li>
+                    <select name="" id="">
+                        <option value="1">VN</option>
+                        <option value="2">ENG</option>
+                    </select>
                 </ul>
-                <select name="regions" id="regions">
-                    <option value=""><a href="#">VN</a></option>
-                    <option value=""><a href="#">ENG</a></option>
-                </select>
             </div>
         </div>
-
-        <img class="header__heading-work" src="image/WorkBG 2.svg" alt="">
+        <div>
+            <img id="header__heading-work" src="image/WorkBG 2.svg" alt="" style="width: 100%;">
+            <img id="header__heading-phg" src="image/PHG.svg" alt="">
+        </div>
+        
+        <!-- <img id="header__heading-gr" src="image/Group.svg" alt=""> -->
         <h1>To Bring the world to VietNam <br>to bring viet nam to the world</h1>
-        <img class="header__heading-phg" src="image/PHG.svg" alt="">
+        
 
     </div>
 
     <div class="section__info">
         <ul class="section__info-list">
-            <li><a href="#">360</a></li>
+            <li class="section__info-active"><a href="#">360</a></li>
             <li><a href="#">Art & Culture</a></li>
             <li><a href="#">Event</a></li>
             <li><a href="#">Communication</a></li>
@@ -54,38 +55,38 @@
         <img class="section__img-frameLeft" src="image/Frame-left.svg" alt="">
         <img class="section__img-frameRight" src="image/Frame-right.svg" alt="">
 
-        <div class="grid ">
-            <div class="row section__row">
+        <div class="grid section__row">
+            <div class=" row ">
                 <div class="col l-3 m-6 c-12 section__product">
-                <img src="image/EC3 1.svg" alt="">
-                <img  class="section__img-frame" src="image/Frame.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
+                    <img  class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
                 <div class="col l-3 m-6 c-12 section__product">
-                    <img src="image/EC3 1.svg" alt="">
+                    <img class="section__img-ec3" src="image/EC3 1.svg" alt="">
                     <img class="section__img-frame" src="image/Frame.svg" alt="">
                 </div>
             </div>
@@ -106,9 +107,8 @@
     </div>
     <div class="section__footer">
         <div class="section__footer-left">
-            <h2>Bring the world to <br />Vietnam<br /> & Vietnam to the world</h2>
-            <img class="section__footer-contact" src="image/contact.svg" alt="">
-
+            <img src="image/contact.svg" alt="">
+            <h2>Bring the world to <br/>Vietnam <br/>& Vietnam to the world</h2>
         </div>
         <div class="section__footer-right">
             <a href="#" class="fa fa-facebook"></a>
@@ -122,6 +122,7 @@
         </div>
 
     </div>
+  
 </body>
 
 </html>
