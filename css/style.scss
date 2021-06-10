@@ -108,20 +108,30 @@ body {
         position: absolute;
     }
 
-    .section__product {
-        position: relative;
+    .section__row {
 
-        .section__img-frame {
-            position: absolute;
-            top: 5%;
-            right: 0%;
-            bottom: 0;
-            left: 59%;
+        position: relative;
+        top: -200px;
+        left: 150px;
+        right: 0;
+        bottom: 0;
+
+        .section__product {
+            position: relative;
+
+            .section__img-frame {
+                position: absolute;
+                top: 5%;
+                right: 0%;
+                bottom: 0;
+                left: 59%;
+            }
         }
     }
-}
 
 }
+
+
 
 .section__contact {
     background: linear-gradient(95.92deg, #02EE55 39.19%, #38AFF1 104.14%);

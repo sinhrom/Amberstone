@@ -110,15 +110,24 @@ body {
   position: absolute;
 }
 
-.section__info .section__product {
+.section__info .section__row {
+  position: relative;
+  top: -200px;
+  left: 150px;
+  right: 0;
+  bottom: 0;
+}
+
+.section__info .section__row .section__product {
   position: relative;
 }
 
-.section__info .section__product .section__img-frame {
+.section__info .section__row .section__product .section__img-frame {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 5%;
+  right: 0%;
   bottom: 0;
+  left: 59%;
 }
 
 .section__contact {
