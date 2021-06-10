@@ -15,6 +15,7 @@ html {
 
 
 .header {
+    position: relative;
 
     .header__logo {
         display: flex;
@@ -29,14 +30,52 @@ html {
                 display: flex;
 
                 .header__navbar-items {
-                    padding-right: 106px;
+                    padding-right: 120px;
                     font-size: 18px;
+
 
                     a {
                         color: white;
                         text-decoration: none;
                         text-transform: uppercase;
                         font-weight: bold;
+                    }
+                }
+
+                .header__navbar-dropdown {
+                    overflow: hidden;
+
+                    .header__navbar-dropbtn {
+                        padding: 10px;
+                        border-radius: 5px;
+                        // background-color: none;
+                        outline: none;
+
+                        .header__navbar-dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #aaa;
+                            min-width: 60px;
+
+                            a {
+                                display: block;
+                                color: black;
+                                text-decoration: none;
+                                text-align: left;
+
+                            }
+
+                            a:hover {
+                                background-color: #ddd;
+                            }
+
+                        }
+                    }
+                }
+
+                .header__navbar-dropdown:hover {
+                    .header__navbar-dropdown-content {
+                        display: block;
                     }
                 }
             }
@@ -58,15 +97,13 @@ html {
     h1 {
         text-transform: uppercase;
         position: absolute;
-        top: 43%;
-        left: 22%;
+        bottom: 14%;
+        left: 23%;
         color: white;
         font-size: 65px;
         letter-spacing: 0.2em;
     }
 }
-
-
 
 
 .section__info {
@@ -81,11 +118,33 @@ html {
         justify-content: space-between;
         padding: 0 25%;
 
+
+
         a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 24px;
-            line-height: 35.57px;
+            font-size: 16px;
+            line-height: 34px;
+            opacity: 50%;
+
+        }
+
+        .section__info-active {
+            font-weight: 300;
+            position: relative;
+
+            a {
+                color: #02EE55;
+                opacity: 100%;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 8%;
+                bottom: -25%;
+                left: 0;
+            }
         }
     }
 
@@ -104,6 +163,7 @@ html {
         position: absolute;
         left: 25%;
         right: 25%;
+        opacity: 50%;
     }
 
     .section__row {
@@ -128,13 +188,42 @@ html {
                     right: 47px;
                     top: 23px;
                 }
+
+            }
+
+            .section__product:hover {
+                .section__img-frame {
+                    transform: rotate(45deg);
+
+                }
+
+                h2 {
+                    display: block;
+                    position: absolute;
+                    bottom: 7%;
+                    left: 10%;
+                    font-size: 160%;
+                    color: white;
+                }
+
+                p {
+                    display: block;
+                    position: absolute;
+
+                    bottom: 18%;
+                    left: 10%;
+                    font-size: 110%;
+                    color: #02EE55;
+                }
+
+                transition: height 300ms;
+                transition-timing-function: ease-out;
+                background: linear-gradient(0.49deg, #0B0A16 -2.45%, rgba(11, 10, 22, 0) 69.97%);
             }
         }
 
     }
 }
-
-
 
 
 .section__contact {
@@ -218,6 +307,8 @@ html {
         }
     }
 }
+
+
 
 ul,
 li {

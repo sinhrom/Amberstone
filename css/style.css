@@ -11,6 +11,10 @@ html {
   padding: 0;
 }
 
+.header {
+  position: relative;
+}
+
 .header .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,7 +36,7 @@ html {
 }
 
 .header .header__logo .header__navbar .header__navbar-list .header__navbar-items {
-  padding-right: 106px;
+  padding-right: 120px;
   font-size: 18px;
 }
 
@@ -41,6 +45,38 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown {
+  overflow: hidden;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #aaa;
+  min-width: 60px;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown:hover .header__navbar-dropdown-content {
+  display: block;
 }
 
 .header #header__heading-phg {
@@ -58,8 +94,8 @@ html {
 .header h1 {
   text-transform: uppercase;
   position: absolute;
-  top: 43%;
-  left: 22%;
+  bottom: 14%;
+  left: 23%;
   color: white;
   font-size: 65px;
   letter-spacing: 0.2em;
@@ -85,8 +121,27 @@ html {
 .section__info .section__info-list a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 24px;
-  line-height: 35.57px;
+  font-size: 16px;
+  line-height: 34px;
+  opacity: 50%;
+}
+
+.section__info .section__info-list .section__info-active {
+  font-weight: 300;
+  position: relative;
+}
+
+.section__info .section__info-list .section__info-active a {
+  color: #02EE55;
+  opacity: 100%;
+}
+
+.section__info .section__info-list .section__info-active img {
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  bottom: -25%;
+  left: 0;
 }
 
 .section__info .section__img-frameLeft {
@@ -104,6 +159,7 @@ html {
   position: absolute;
   left: 25%;
   right: 25%;
+  opacity: 50%;
 }
 
 .section__info .section__row {
@@ -126,6 +182,37 @@ html {
   width: 18%;
   right: 47px;
   top: 23px;
+}
+
+.section__info .section__row .row .section__product:hover {
+  -webkit-transition: height 300ms;
+  transition: height 300ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  background: linear-gradient(0.49deg, #0B0A16 -2.45%, rgba(11, 10, 22, 0) 69.97%);
+}
+
+.section__info .section__row .row .section__product:hover .section__img-frame {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.section__info .section__row .row .section__product:hover h2 {
+  display: block;
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+  font-size: 160%;
+  color: white;
+}
+
+.section__info .section__row .row .section__product:hover p {
+  display: block;
+  position: absolute;
+  bottom: 18%;
+  left: 10%;
+  font-size: 110%;
+  color: #02EE55;
 }
 
 .section__contact {
