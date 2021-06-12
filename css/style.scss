@@ -486,4 +486,43 @@ li {
             }
         }
     }
+
+    .section__footer {
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+
+        .section__footer-left {
+
+            img {
+                width: 126%;
+                position: relative;
+                left: -12%;
+            }
+
+            h2 {
+                br {
+                    content: ' ';
+                }
+
+                br:after {
+                    content: ' ';
+                }
+
+                top: 28px;
+                left: 10%;
+                font-size: 50px;
+                width: 80%;
+            }
+        }
+
+        .section__footer-right {
+            text-align: center;
+            padding-right: 0;
+            a {
+                padding: 0px 22px;
+                font-size: 40px;
+            }
+        }
+    }
 }
