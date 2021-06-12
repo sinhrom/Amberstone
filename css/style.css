@@ -240,7 +240,7 @@ html {
 
 .section__contact {
   background: linear-gradient(95.92deg, #02EE55 39.19%, #38AFF1 104.14%);
-  max-height: 466px;
+  height: 466px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,6 +417,33 @@ li {
     left: 10%;
     font-size: 110%;
     color: #02EE55;
+  }
+  .section__contact {
+    height: 1480px;
+  }
+  .section__contact .section__contact-para h3 {
+    width: 70%;
+    height: 10%;
+  }
+  .section__contact .section__contact-para h1 {
+    padding-bottom: 90px;
+    width: auto;
+    margin: auto;
+  }
+  .section__contact .section__contact-announce {
+    width: 0;
+  }
+  .section__contact .section__contact-announce .section__contact-loud {
+    top: 20%;
+    right: -3%;
+    width: 100%;
+    height: 100%;
+  }
+  .section__contact .section__contact-announce .section__contact-hand {
+    top: 40%;
+    right: -26%;
+    width: 100%;
+    height: 88%;
   }
 }
 /*# sourceMappingURL=style.css.map */
