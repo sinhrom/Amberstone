@@ -47,48 +47,10 @@ html {
   font-weight: bold;
 }
 
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown {
-  overflow: hidden;
-}
-
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn {
-  padding: 10px;
-  border-radius: 5px;
-  outline: none;
-}
-
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #aaa;
-  min-width: 60px;
-}
-
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content a {
-  display: block;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown .header__navbar-dropbtn .header__navbar-dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.header .header__logo .header__navbar .header__navbar-list .header__navbar-dropdown:hover .header__navbar-dropdown-content {
-  display: block;
-}
-
 .header #header__heading-phg {
   position: absolute;
   top: 30%;
   right: 16%;
-}
-
-.header #header__heading-gr {
-  position: absolute;
-  top: 0;
-  left: 230px;
 }
 
 .header h1 {
@@ -96,9 +58,45 @@ html {
   position: absolute;
   bottom: 14%;
   left: 23%;
+  width: 72%;
   color: white;
-  font-size: 65px;
+  font-size: 3em;
   letter-spacing: 0.2em;
+}
+
+.header #header__heading-vector1 {
+  position: absolute;
+  bottom: 15%;
+  left: 17.6%;
+  top: 19.5%;
+}
+
+.header #header__heading-vector2 {
+  position: absolute;
+  bottom: 13%;
+  left: 15.5%;
+  top: 15.2%;
+}
+
+.header #header__heading-vector3 {
+  position: absolute;
+  bottom: 14%;
+  left: 13%;
+  top: 10%;
+}
+
+.header #header__heading-vector4 {
+  position: absolute;
+  bottom: 14%;
+  left: 11%;
+  top: 5.5%;
+}
+
+.header #header__heading-vector5 {
+  position: absolute;
+  bottom: 14%;
+  left: 9%;
+  top: 1%;
 }
 
 .section__info {
@@ -184,17 +182,18 @@ html {
   top: 23px;
 }
 
-.section__info .section__row .row .section__product:hover {
-  -webkit-transition: height 300ms;
-  transition: height 300ms;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  background: linear-gradient(0.49deg, #0B0A16 -2.45%, rgba(11, 10, 22, 0) 69.97%);
-}
-
 .section__info .section__row .row .section__product:hover .section__img-frame {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.section__info .section__row .row .section__product:hover .section__img-ec {
+  display: block;
+  position: absolute;
+  width: 97%;
+  top: 0;
 }
 
 .section__info .section__row .row .section__product:hover h2 {
@@ -309,5 +308,24 @@ li {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+/* PC */
+@media (max-width: 1023px) {
+  .header .header__logo .header__navbar .header__navbar-list .header__navbar-items {
+    display: none;
+  }
+  .header .header__logo .header__navbar .header__navbar-list img {
+    display: block;
+  }
+  .section__info .section__row .row .section__product .section__img-ec3,
+  .section__info .section__row .row .section__product .section__img-frame {
+    display: none;
+  }
+  .section__info .section__row .row .section__product p,
+  .section__info .section__row .row .section__product h2,
+  .section__info .section__row .row .section__product .section__img-ec {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
