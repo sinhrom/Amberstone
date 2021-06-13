@@ -199,43 +199,59 @@ html {
   padding-bottom: 20px;
 }
 
+.section__info .section__row .row .section__product .section__img-ec {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  width: 94%;
+  top: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 .section__info .section__row .row .section__product .section__img-frame {
+  opacity: 1;
   position: absolute;
   width: 18%;
   right: 47px;
   top: 23px;
 }
 
-.section__info .section__row .row .section__product:hover .section__img-frame {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
-}
-
-.section__info .section__row .row .section__product:hover .section__img-ec {
-  display: block;
-  position: absolute;
-  width: 97%;
-  top: 0;
-}
-
-.section__info .section__row .row .section__product:hover h2 {
+.section__info .section__row .row .section__product h2 {
+  opacity: 0;
   display: block;
   position: absolute;
   bottom: 7%;
   left: 10%;
   font-size: 160%;
   color: white;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
-.section__info .section__row .row .section__product:hover p {
+.section__info .section__row .row .section__product p {
+  opacity: 0;
   display: block;
   position: absolute;
   bottom: 18%;
   left: 10%;
   font-size: 110%;
   color: #02EE55;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.section__info .section__row .row .section__product:hover .section__img-frame {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+
+.section__info .section__row .row .section__product:hover .section__img-ec,
+.section__info .section__row .row .section__product:hover p,
+.section__info .section__row .row .section__product:hover h2 {
+  opacity: 1;
 }
 
 .section__contact {
@@ -255,7 +271,6 @@ html {
 .section__contact .section__contact-para h1 {
   font-size: 72px;
   margin: 0;
-  width: 57%;
 }
 
 .section__contact .section__contact-para h3 {
@@ -378,15 +393,22 @@ li {
   .section__info .section__img-frameRight {
     display: none;
   }
+  .section__info .section__info-list {
+    padding: 0 8%;
+  }
+  .section__info hr {
+    left: 8%;
+    right: 8%;
+  }
   .section__info .section__row {
     padding: 60px 100px;
     top: 0;
   }
   .section__info .section__row .row {
-    margin: 0 100px;
+    margin: 0 20px;
   }
   .section__info .section__row .row .section__product {
-    max-width: 50%;
+    max-width: 70%;
     pointer-events: none;
     padding-bottom: 49px;
     -webkit-box-flex: 0;
@@ -395,17 +417,18 @@ li {
   }
   .section__info .section__row .row .section__product .section__img-ec3,
   .section__info .section__row .row .section__product .section__img-frame {
-    display: none;
+    opacity: 0;
   }
   .section__info .section__row .row .section__product p,
   .section__info .section__row .row .section__product h2,
   .section__info .section__row .row .section__product .section__img-ec {
-    display: block;
+    opacity: 1;
+    width: 95.5%;
   }
   .section__info .section__row .row .section__product h2 {
     display: block;
     position: absolute;
-    bottom: 7%;
+    bottom: 13%;
     left: 10%;
     font-size: 160%;
     color: white;
@@ -413,7 +436,7 @@ li {
   .section__info .section__row .row .section__product p {
     display: block;
     position: absolute;
-    bottom: 18%;
+    bottom: 24%;
     left: 10%;
     font-size: 110%;
     color: #02EE55;
@@ -479,6 +502,30 @@ li {
   .section__footer .section__footer-right a {
     padding: 0px 22px;
     font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header .header__logo {
+    top: 20px;
+  }
+  .header .header__logo .header__navbar .header__navbar-list img {
+    width: 6%;
+  }
+  .header #header__heading-phg {
+    width: 19px;
+    height: 22px;
+  }
+  .header h1 {
+    font-size: 1.3em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    letter-spacing: 2px;
+  }
+  .section__info .section__row {
+    padding: 50px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -197,14 +197,46 @@ html {
                 .section__img-ec3 {
                     width: 100%;
                     padding-bottom: 20px;
+                    // z-index: 2;
+                }
 
+                .section__img-ec {
+                    opacity: 0;
+                    display: block;
+                    position: absolute;
+                    width: 94%;
+                    top: 0;
+                    transition: opacity 1s;
                 }
 
                 .section__img-frame {
+                    opacity: 1;
                     position: absolute;
                     width: 18%;
                     right: 47px;
                     top: 23px;
+                }
+
+                h2 {
+                    opacity: 0;
+                    display: block;
+                    position: absolute;
+                    bottom: 7%;
+                    left: 10%;
+                    font-size: 160%;
+                    color: white;
+                    transition: opacity 1s;
+                }
+
+                p {
+                    opacity: 0;
+                    display: block;
+                    position: absolute;
+                    bottom: 18%;
+                    left: 10%;
+                    font-size: 110%;
+                    color: #02EE55;
+                    transition: opacity 1s;
                 }
 
             }
@@ -212,34 +244,15 @@ html {
             .section__product:hover {
                 .section__img-frame {
                     transform: rotate(45deg);
-                    transition: 1.2s;
+                    transition: opacity 1.2s;
                 }
 
-                .section__img-ec {
-                    display: block;
-                    position: absolute;
-                    width: 97%;
-                    top: 0;
-
-                }
-
+                .section__img-ec,
+                p,
                 h2 {
-                    display: block;
-                    position: absolute;
-                    bottom: 7%;
-                    left: 10%;
-                    font-size: 160%;
-                    color: white;
+                    opacity: 1;
                 }
 
-                p {
-                    display: block;
-                    position: absolute;
-                    bottom: 18%;
-                    left: 10%;
-                    font-size: 110%;
-                    color: #02EE55;
-                }
             }
         }
 
@@ -260,7 +273,7 @@ html {
         h1 {
             font-size: 72px;
             margin: 0;
-            width: 57%;
+
         }
 
         h3 {
@@ -404,45 +417,57 @@ li {
             display: none;
         }
 
-        .section__info-list {}
+        .section__info-list {
+            padding: 0 8%;
+        }
+
+        hr {
+            left: 8%;
+            right: 8%;
+        }
 
         .section__row {
             padding: 60px 100px;
             top: 0;
 
             .row {
-                margin: 0 100px;
+                margin: 0 20px;
 
                 .section__product {
-                    max-width: 50%;
+
+                    max-width: 70%;
                     pointer-events: none;
                     padding-bottom: 49px;
                     flex: 0 0 50%;
 
                     .section__img-ec3,
                     .section__img-frame {
-                        display: none;
+                        opacity: 0;
                     }
 
                     p,
                     h2,
                     .section__img-ec {
-                        display: block;
+                        opacity: 1;
+
+                        width: 95.5%;
                     }
 
                     h2 {
+
                         display: block;
                         position: absolute;
-                        bottom: 7%;
+                        bottom: 13%;
                         left: 10%;
                         font-size: 160%;
                         color: white;
                     }
 
                     p {
+
                         display: block;
                         position: absolute;
-                        bottom: 18%;
+                        bottom: 24%;
                         left: 10%;
                         font-size: 110%;
                         color: #02EE55;
@@ -519,10 +544,43 @@ li {
         .section__footer-right {
             text-align: center;
             padding-right: 0;
+
             a {
                 padding: 0px 22px;
                 font-size: 40px;
             }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header {
+        .header__logo {
+            top: 20px;
+            .header__navbar {
+                .header__navbar-list {
+                    img {
+                        width: 6%;
+                    }
+                }
+            }
+        }
+        #header__heading-phg {
+            width: 19px;
+            height: 22px;
+        }
+
+        h1 {
+            font-size: 1.3em;
+            width: max-content;
+            letter-spacing: 2px;
+        }
+    }
+
+    .section__info {
+        .section__row {
+            padding: 50px 0;
         }
     }
 }
